@@ -1,4 +1,4 @@
-This is an adaptation of LSL_Neuromore from (ViacheslavBobrov) [https://github.com/ViacheslavBobrov/LSL_Neuromore] adapted to work alongside OpenSignals. Currently, this has only been tested with BITalino
+This is an adaptation of LSL_Neuromore from (ViacheslavBobrov) [https://github.com/ViacheslavBobrov/LSL_Neuromore] adapted to work alongside OpenSignals. 
 
 # LSL for Neuromore Studio (OpenSignals Fork)
 
@@ -40,5 +40,8 @@ The Script should work for Muse 2 as well, alternative solution https://github.c
 
 ### Limitations
 
-1. Has not been tested with multiple devices in the configuration file, only one device should be enabled at one time
-2. Only streaming (max 6) analog channels by default, digital channels can be added to the cahnnel list, however.  
+1. Currently, this has only been tested with BITalino
+
+2. This has not been tested with multiple devices in the configuration file, only one device should be enabled at one time
+
+3. Only streaming (max 6) analog channels by default, digital channels can be added to the cahnnel list, however.  
