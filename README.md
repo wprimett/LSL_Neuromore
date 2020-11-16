@@ -1,8 +1,10 @@
-*This is an adaptation of LSL_Neuromore from (ViacheslavBobrov)[https://github.com/ViacheslavBobrov/LSL_Neuromore] adapted to work alongside OpenSignals.*
+*This is an adaptation of LSL_Neuromore from [ViacheslavBobrov](https://github.com/ViacheslavBobrov/LSL_Neuromore) adapted to work alongside OpenSignals.*
 
 # LSL for Neuromore Studio (OpenSignals Fork)
 
 Connecting BITalino devices to Neuromore Studio
+
+[demo video](https://www.youtube.com/watch?v=qUqyl5p8x3M)
 
 The script redirects LSL stream to OSC, which Neuromore Studio takes as its input. 
 The script connects Muse headband, but in theory it can work with other devices (for example Open BCI) as long as the data from them goes thought LSL stream.
