@@ -31,14 +31,18 @@ Below is the instruction for Windows 10. For the other platforms the steps are s
 ### Running the script
 
 1. ~~Connect the Muse headband to BlueMuse~~
-1. Run  `python stream_data.py`
+1. Run  `python3 stream_data.py`
 1. Open Neuromore Studio and configure OSC Server (`Edit -> Settings`) to listen on input port 4545, address 0.0.0.0 (if everything runs on a local machine)
 1. In the Studio create a Classifier and create 4 (or 5 for aux channel) OSC Input nodes
 ![Screenshot](screenshot.png)
-1. Configure each node to listen to one of the OSC addresses (`/muse/tp9`, `muse/af7` etc.) and set the sampling rate to 256
+1. Configure each node to listen to one of the OSC addresses (`/bitalino/A1`, `/bitalino/A2` etc.) and set the sampling rate to 256
 1. To see the raw data: `View -> Add -> Signal View`
 
 The Script should work for Muse 2 as well, alternative solution https://github.com/naxocaballero/muse2-neuromore
+
+### Troubleshooting
+
+1. By default, the script takes data from the OpenSignals directory. If this returns an error, copy from `OpenSignals (r)evolution/configurationsdevice_list.json/` to the `LSL_Neuromore` folder and add run `python3 stream_data.py local_dir`
 
 ### Limitations
 

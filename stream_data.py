@@ -6,6 +6,8 @@ from threading import Thread
 from time import sleep
 
 import json
+import sys
+from os.path import expanduser
 
 class LslToOscStreamer:
 
@@ -40,18 +42,22 @@ class LslToOscStreamer:
 
 
 if __name__ == "__main__":
-    try:
+    args = sys.argv[1] if len(sys.argv) > 1 else None
+    device_file_path = expanduser("~/Documents/OpenSignals (r)evolution/configurations/device_list.json")
+    if (args == "local_dir"):
         device_file_path = "device_list.json"
-        # device_file_path = "~/Documents/OpenSignals\\(r)evolution/configurations/device_list.json"
+    print("reading file: " + device_file_path)
+    try:
         with open(device_file_path, "r") as read_file:
             device_list = json.load(read_file)
         default_device = device_list[list(device_list.keys())[0]]
         mac_addr = default_device['mac']
+        print(mac_addr)
     except Exception as e:
         print(e)
         print("unable to read device_list.json file")
-        print("Please copy configuration from OpenSignals (r)evolution directory")
-        exit()
+        print("Please follow troubleshooting instructions in README.md")
+        sys.exit()
 
     host = "127.0.0.1"
     port = 4545
