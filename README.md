@@ -1,4 +1,4 @@
-This is an adaptation of LSL_Neuromore from (ViacheslavBobrov) [https://github.com/ViacheslavBobrov/LSL_Neuromore] adapted to work alongside OpenSignals. 
+*This is an adaptation of LSL_Neuromore from (ViacheslavBobrov) [https://github.com/ViacheslavBobrov/LSL_Neuromore] adapted to work alongside OpenSignals.*
 
 # LSL for Neuromore Studio (OpenSignals Fork)
 
